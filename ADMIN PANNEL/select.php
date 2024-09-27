@@ -24,6 +24,7 @@
     <td><?php echo $row['admin_name']?></td>
     <td><?php echo $row['admin_password']?></td>
     <td><a href="delete.php?id=<?php echo $row['id']?>">Delete</a></td>
+    <td><a href="update.php?id=<?php echo $row['id']?>">Update</a></td>
     
 
 <?php
