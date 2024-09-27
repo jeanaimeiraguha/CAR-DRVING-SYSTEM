@@ -23,7 +23,8 @@ while($row=mysqli_fetch_all($select)){
     <td><?php echo $row['admin_name']?></td>
     <td><?php echo $row['admin_password']?></td>
 </tr>
-
+<?php
+}?>
    </table> 
 </body>
 </html>
