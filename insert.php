@@ -24,15 +24,15 @@ if (isset($_POST['insert'])) {
 </head>
 <body>
    <form action="" method="post">
-    Candidate ID<input type="text">
-    first Name<input type="text">
-   Last Name<input type="text">
-   Gender<input type="text">
-    Candidate ID<input type="text">
-   DOB<input type="text">
-  Exam date<input type="text">
-  Phone number<input type="text">
-   <button name="insert">Create Admin</button>
+    Candidate ID<input type="text" name="">
+    first Name<input type="text" name="">
+   Last Name<input type="text" name="">
+   Gender<input type="text" name="">
+    Candidate ID<input type="text" name="">
+   DOB<input type="text" name="">
+  Exam date<input type="text" name="">
+  Phone number<input type="text" name="">
+   <button name="insert">Create User</button>
    </form> 
 </body>
 </html>
