@@ -7,6 +7,17 @@
 </head>
 <body>
    <table border="1">
+<tr>
+    <th>ID</th>
+    <th>Admin Name</th>
+    <th>Admin Password</th>
+</tr>
+<?php
+include('conn.php');
+$select =mysqli_query($conn , "SELECT * FROM admin");
+
+while($row=mysqli_fetch_all($select)){
+?>
 
    </table> 
 </body>
