@@ -11,6 +11,7 @@
     <th>ID</th>
     <th>Admin Name</th>
     <th>Admin Password</th>
+    <th colspan="2">Operations</th>
 </tr>
 <?php
 include('conn.php');

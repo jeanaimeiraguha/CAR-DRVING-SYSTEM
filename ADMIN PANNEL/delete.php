@@ -8,5 +8,6 @@ if ($delete) {
     # code...
     header('location:select.php');
 }
+exit;
 
 ?>
