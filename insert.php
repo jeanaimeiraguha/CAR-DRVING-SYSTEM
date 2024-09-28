@@ -11,7 +11,7 @@ if (isset($_POST['insert'])) {
     $ExamDate=$_POST['ExamDate'];
     $PhoneNumber=$_POST['PhoneNumber'];
   
-    $insert=mysqli_query($conn , "INSERT INTO admin VALUES('', '$CandidateNationalId', '$FirstName' , '$LastName' , '$Gender' ,'$DOB') ");
+    $insert=mysqli_query($conn , "INSERT INTO candidate VALUES('', '$CandidateNationalId', '$FirstName' , '$LastName' , '$Gender' ,'$DOB' , '$PhoneNumber') ");
     if ($insert) {
         # code...
         echo "Record inserted";
@@ -30,14 +30,14 @@ if (isset($_POST['insert'])) {
 </head>
 <body>
    <form action="" method="post">
-    Candidate ID<input type="text" name="CandidateNationalId">
-    first Name<input type="text" name="FirstName">
-   Last Name<input type="text" name="LastName">
-   Gender<input type="text" name="Gender">
-    Candidate ID<input type="text" name="">
-   DOB<input type="text" name="DOB">
-  Exam date<input type="date" name="ExamDate">
-  Phone number<input type="text" name="PhoneNumber">
+    Candidate ID<input type="text" name="CandidateNationalId"> <br>
+    first Name<input type="text" name="FirstName"> <br>
+   Last Name<input type="text" name="LastName"><br>
+   Gender<input type="text" name="Gender"> <br>
+
+   DOB<input type="text" name="DOB"> <br>
+  Exam date<input type="date" name="ExamDate"> <br>
+  Phone number<input type="text" name="PhoneNumber"> <br>
    <button name="insert">Create User</button>
    </form> 
 </body>
