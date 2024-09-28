@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="insert.php">Add New</a>
     <table border="1">
         <tr>
             <th> CandidateNationalId </th>
             <th>LicenseExamCategory</th>
             <th>ObtainedMarks</th>
             <th>Decision</th>
+            <th colspan="2">Operations</th>
         </tr>
         <?php
         
@@ -24,6 +26,8 @@
             <td><?php echo $row['LicenseExamCategory']?></td>
             <td><?php echo $row['ObtainedMarks']?></td>
             <td><?php echo $row['Decision']?></td>
+            <td><a href="delete.php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Delete</a></td>
+            <td><a href=".php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Update</a></td>
         </tr>
         <?php
         }
