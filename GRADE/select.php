@@ -27,7 +27,7 @@
             <td><?php echo $row['ObtainedMarks']?></td>
             <td><?php echo $row['Decision']?></td>
             <td><a href="delete.php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Delete</a></td>
-            <td><a href=".php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Update</a></td>
+            <td><a href="update.php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Update</a></td>
         </tr>
         <?php
         }
