@@ -20,11 +20,14 @@
         while($row=mysqli_fetch_array($select)){
         ?>
         <tr>
-            <td><?php echo $row['']?></td>
-            <td><?php echo $row['']?></td>
-            <td><?php echo $row['']?></td>
-            <td><?php echo $row['']?></td>
+            <td><?php echo $row['CandidateNationalId']?></td>
+            <td><?php echo $row['LicenseExamCategory']?></td>
+            <td><?php echo $row['ObtainedMarks']?></td>
+            <td><?php echo $row['Decision']?></td>
         </tr>
+        <?php
+        }
+        ?>
 
     </table>
 </body>

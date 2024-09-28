@@ -10,8 +10,10 @@ if (isset($_POST['insert'])) {
     $insert=mysqli_query($conn , "INSERT INTO grade VALUES('$CandidateNationalId', '$LicenseExamCategory', '$ObtainedMarks','$Decision') ");
     if ($insert) {
         # code...
-        echo "Record inserted";
-    }
+        //echo "Record inserted";
+    
+    header('location:select.php');
+}
     else{
         echo "not really working";
     }
