@@ -7,7 +7,7 @@ if (isset($_POST['insert'])) {
     $LicenseExamCategory=$_POST['LicenseExamCategory'];
     $ObtainedMarks=$_POST['ObtainedMarks'];
     $Decision=$_POST['Decision'];
-    $insert=mysqli_query($conn , "INSERT INTO admin VALUES('$CandidateNationalId', '$LicenseExamCategory', '$ObtainedMarks' , '$Decision') ");
+    $insert=mysqli_query($conn , "INSERT INTO grade VALUES('$CandidateNationalId', '$LicenseExamCategory', '$ObtainedMarks' , '$Decision') ");
     if ($insert) {
         # code...
         echo "Record inserted";
