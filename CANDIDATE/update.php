@@ -22,7 +22,7 @@ $row=mysqli_fetch_array($select);
    DOB<input type="text" name="DOB" value="<?php $row['DOB']?>"> <br>
   Exam date<input type="date" name="ExamDate" value="<?php $row['ExamDate']?>"> <br>
   Phone number<input type="text" name="PhoneNumber" value="<?php $row['PhoneNumber']?>"> <br>
-   <button name="insert">Create User</button>
+   <button name="insert">Update User</button>
    </form> 
 </body>
 </html>
