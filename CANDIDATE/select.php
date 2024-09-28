@@ -16,6 +16,7 @@
             <th>DOB</th>
             <th>ExamDate</th>
             <th>PhoneNumber</th>
+            <th colspan="2">Operations</th>
         </tr>
         <?php
     include('conn.php');
@@ -31,6 +32,8 @@
             <td><?php echo $row['DOB']?></td>
             <td><?php echo $row['ExamDate']?></td>
             <td><?php echo $row['PhoneNumber']?></td>
+            <td><a href="delete.php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Delete</a></td>
+
         </tr>
         <?php
         
