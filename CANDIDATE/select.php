@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="insert.php">Create New User</a>
     <table border="1">
         <tr>
             <th>CandidateNationalId</th>

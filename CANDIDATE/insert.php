@@ -11,10 +11,10 @@ if (isset($_POST['insert'])) {
     $ExamDate=$_POST['ExamDate'];
     $PhoneNumber=$_POST['PhoneNumber'];
   
-    $insert=mysqli_query($conn , "INSERT INTO candidate VALUES('', '$CandidateNationalId', '$FirstName' , '$LastName' , '$Gender' ,'$DOB' , '$PhoneNumber') ");
+    $insert=mysqli_query($conn , "INSERT INTO candidate VALUES('$CandidateNationalId','$FirstName' ,'$LastName' ,'$Gender' ,'$DOB' ,'$ExamDate' ,'$PhoneNumber')");
     if ($insert) {
         # code...
-        echo "Record inserted";
+        //echo "Record inserted";
     }
     else{
         echo "not really working";
