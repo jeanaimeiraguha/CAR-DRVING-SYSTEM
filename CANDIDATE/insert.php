@@ -15,6 +15,7 @@ if (isset($_POST['insert'])) {
     if ($insert) {
         # code...
         //echo "Record inserted";
+        header('location:select.php');
     }
     else{
         echo "not really working";
