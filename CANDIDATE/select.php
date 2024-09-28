@@ -33,6 +33,7 @@
             <td><?php echo $row['ExamDate']?></td>
             <td><?php echo $row['PhoneNumber']?></td>
             <td><a href="delete.php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Delete</a></td>
+            <td><a href=".php?CandidateNationalId=<?php echo $row['CandidateNationalId']?>">Update</a></td>
 
         </tr>
         <?php
