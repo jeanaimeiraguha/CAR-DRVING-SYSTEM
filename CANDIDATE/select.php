@@ -20,6 +20,7 @@
         
         include('conn.php');
         $select=mysqli_query($conn , "SELECT * FROM candidate");
+        while($row=mysqli_fetch_array($select)){
         
         ?>
 
