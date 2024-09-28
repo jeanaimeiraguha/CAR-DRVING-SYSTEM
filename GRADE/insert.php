@@ -5,9 +5,9 @@ if (isset($_POST['insert'])) {
     # code...
     $CandidateNationalId=$_POST['CandidateNationalId'];
     $LicenseExamCategory=$_POST['LicenseExamCategory'];
-    $ObtainedMarks =$_POST['ObtainedMarks '];
+    $ObtainedMarks=$_POST['ObtainedMarks'];
     $Decision=$_POST['Decision'];
-    $insert=mysqli_query($conn , "INSERT INTO grade VALUES('$CandidateNationalId', '$LicenseExamCategory', '$ObtainedMarks ','$Decision') ");
+    $insert=mysqli_query($conn , "INSERT INTO grade VALUES('$CandidateNationalId', '$LicenseExamCategory', '$ObtainedMarks','$Decision') ");
     if ($insert) {
         # code...
         echo "Record inserted";
