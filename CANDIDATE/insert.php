@@ -36,7 +36,7 @@ if (isset($_POST['insert'])) {
    Last Name<input type="text" name="LastName"><br>
    Gender<input type="text" name="Gender"> <br>
 
-   DOB<input type="text" name="DOB"> <br>
+   DOB<input type="date" name="DOB"> <br>
   Exam date<input type="date" name="ExamDate"> <br>
   Phone number<input type="text" name="PhoneNumber"> <br>
    <button name="insert">Create User</button>

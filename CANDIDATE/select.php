@@ -43,27 +43,3 @@
     </table>
 </body>
 </html>
-<?php
-include('conn.php');
-
-if (isset($_POST['insert'])) {
-    # code..
-    $CandidateNationalId=$_POST['CandidateNationalId'];
-    $FirstName=$_POST['FirstName'];
-    $LastName=$_POST['LastName'];
-    $Gender=$_POST['Gender'];
-    $DOB=$_POST['DOB'];
-    $ExamDate=$_POST['ExamDate'];
-    $PhoneNumber=$_POST['PhoneNumber'];
-  
-    $update=mysqli_query($conn , "UPDATE candidate SET CandidateNationalId='$CandidateNationalId',FirstName='$FirstName' ,LastName='$LastName' ,Gender='$Gender' ,DOB='$DOB' ,ExamDate='$ExamDate' ,PhoneNumber='$PhoneNumber'");
-    if ($update) {
-        # code...
-        //echo "Record inserted";
-        header('location:select.php');
-    }
-    else{
-        echo "not really working";
-    }
-}
-?>
